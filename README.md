@@ -130,7 +130,14 @@ DeviceNetworkEvents
 - **Process:** `tor.exe`
 - **File Path:** `c:\users\maruser\desktop\tor browser\browser\torbrowser\tor\tor.exe`
 
-### 5. File Creation - TOR Shopping List
+### 5. Additional Network Connections - TOR Browser Activity
+
+- **Timestamps:**
+  - `2025-12-17T22:43:17.4027628Z` - Local connection to `127.0.0.1` on port `9150`.
+- **Event:** Additional TOR network connections were established, indicating ongoing activity by user "maruser" through the TOR browser.
+- **Action:** Multiple successful connections detected.
+
+### 6. File Creation - TOR Shopping List
 
 - **Timestamp:** `2025-12-17T22:34:23.7126194Z`
 - **Event:** The user "maruser" created a file named `tor-shopping-list.txt` on the desktop, potentially indicating a list or notes related to their TOR browser activities.
