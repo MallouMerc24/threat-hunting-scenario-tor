@@ -40,7 +40,7 @@ DeviceFileEvents
 | order by Timestamp desc  
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/71402e84-8767-44f8-908c-1805be31122d">
+<img width="1212" height="430" alt="image" src="https://github.com/user-attachments/assets/aa9384b0-3720-443f-8a81-f89c5e72a07b" />
 
 ---
 
@@ -57,7 +57,8 @@ DeviceProcessEvents
 | where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-15.0.3.exe"  
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b07ac4b4-9cb3-4834-8fac-9f5f29709d78">
+<img width="1212" height="162" alt="image" src="https://github.com/user-attachments/assets/ee5e08e9-67de-49ff-9298-2bbae1580fb4">
+
 
 ---
 
@@ -69,12 +70,12 @@ Searched for any indication that user "maruser" actually opened the TOR browser.
 
 ```kql
 DeviceProcessEvents  
-| where DeviceName == "maru-mde-test"  
+| where DeviceName == "mar-mde-test"  
 | where FileName has_any ("tor.exe", "firefox.exe", "tor-browser.exe")  
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine  
 | order by Timestamp desc
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b13707ae-8c2d-4081-a381-2b521d3a0d8f">
+<img width="1212" alt="image" src="https://github.com/user-attachments/assets/6b86368e-79fa-4711-a01f-3d350225fef1" />
 
 ---
 
@@ -93,7 +94,7 @@ DeviceNetworkEvents
 | project Timestamp, DeviceName, InitiatingProcessAccountName, ActionType, RemoteIP, RemotePort, RemoteUrl, InitiatingProcessFileName, InitiatingProcessFolderPath  
 | order by Timestamp desc
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/87a02b5b-7d12-4f53-9255-f5e750d0e3cb">
+<img width="1212" alt="image" src="https://github.com/user-attachments/assets/fc344e24-95f4-4359-9bf0-c9749200ebf9" />
 
 ---
 
